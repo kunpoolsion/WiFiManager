@@ -10,6 +10,7 @@ void setup() {
     
     //WiFiManager, Local intialization. Once its business is done, there is no need to keep it around
     WiFiManager wm;
+    WiFi.setTxPower(WIFI_POWER_8_5dBm);
 
     // reset settings - wipe stored credentials for testing
     // these are stored by the esp library
